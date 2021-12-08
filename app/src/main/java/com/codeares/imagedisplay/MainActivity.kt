@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
             override fun onResponse(call: Call<userResponse>, response: Response<userResponse>) {
                 if (response.code() == 200) {
                     var userResponse:userResponse = response.body()!!
-                    Log.d("RESPONSE", Gson().toJson(userResponse.data).toString() )
+                    //Log.d("RESPONSE", Gson().toJson(userResponse.data).toString() )
 
                     userList.addAll(userResponse.data)
 

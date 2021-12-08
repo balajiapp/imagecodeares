@@ -51,7 +51,7 @@ class ImageAdapter(
         myHolder.user_name.setText((current.firstname + " " + current.lastname).toString())
         //myHolder.userImage.
 
-        Log.d(position.toString(),(current.firstname + " " + current.lastname).toString())
+        //Log.d(position.toString(),(current.firstname + " " + current.lastname).toString())
 
         Glide.with(context)
             .load(current.avatar)
